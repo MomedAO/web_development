@@ -1,0 +1,59 @@
+/* identificador seletor {
+  proriedade: valor
+} 
+identificador
+. = classe
+# = id
+
+seletor
+
+p h1 etc, ou nomw sa classe
+
+propriedades 
+color, text-align, border etc
+
+valor
+gree, blue, etc
+left, right, center, etc
+
+*/
+.main_blog {
+  max-width: calc(1000px - 80px);
+  width: calc(96% - 80px);
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #ccc;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main_blog header {
+  flex-basis: 100%;
+}
+
+.main_blog article {
+  flex-basis: calc(50% - 40px - 20px);
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #333;
+  margin: 20px 0;
+}
+
+.main_blog article p {
+  font-size: 1.1em;
+}
+
+.title_medium_red {
+  color: ccc;
+  font-size: 1.4em;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 4px;
+}
+
+@media (max-width: 640px) {
+  .main_blog article {
+    flex-basis: calc(100% - 40px);
+  }
+}
